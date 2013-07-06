@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="墨言木语:青墨语的个人站点"/>
+<meta name="keywords" content="墨言木语,青墨语,Motea"/>
+<title>墨言木语 青墨语的个人站点</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/buttons.css">
+<meta name="viewport" content="width=device-width">
+<style type="text/css"></style></head>
+<body>
+		<img id="logo" src="style/logo.png" alt="Unslider logo">
+        <div class="banner has-dots" style="overflow: hidden; width: 100%; height: 415px;">
+			<ul style="width: 400%; position: relative; left: -200%; height: 415px;">
+				<li style="background-image: url(https://raw.github.com/motea/Motea/master/style/bg4.jpg); background-size: 100%; width: 25%;">
+					<div class="inner">
+						<h1>工大问答</h1>
+						<p>你想知道的关于工大一切，或许这里都能找到答案</p>
+
+						<a class="btn" href="http://www.izjut.com" target="_blank">进入</a>
+					</div>
+				</li>
+
+				<li style="background-image: url(https://raw.github.com/motea/Motea/master/style/bg2.jpg); background-size: 100%; width: 25%;">
+					<div class="inner">
+						<h1>博客</h1>
+						<p>浮光掠影的背后，城市寂寥的边缘，有我...</p>
+
+						<a class="btn" href="http://blog.motea.org" target="_blank">进入</a>
+					</div>
+				</li>
+
+				<li style="background-image: url(https://raw.github.com/motea/Motea/master/style/bg5.jpg); background-size: 100%; width: 25%;">
+					<div class="inner">
+					    <h3>这里是青墨语的个人站点</h3>
+						<a class="btn">青墨语</a><h3>来自祖国的最南端；即将大四的ZJUTer；暂时是金属材料浅学习者；乱捣腾的小白建站者;喜欢安静的环境；喜欢轻音乐<br>Email: i@motea.org</h3><a href="http://weibo.com/qmy1992" target="_blank">新浪微博</a>
+					</div>
+				</li>
+
+				<li style="background-image: url(https://raw.github.com/motea/Motea/master/style/bg3.jpg); background-size: 100%; width: 25%;">
+					<div class="inner">
+						<h1>音乐</h1>
+						<p>我以为我们可以不需要面具，真诚地活着。你，在哪里？</p>
+
+						<a class="btn" href="http://music.motea.org" target="_blank">进入</a>
+					</div>
+				</li>
+				
+				<li style="background-image: url(https://raw.github.com/motea/Motea/master/style/bg1.jpg); background-size: 100%; width: 25%;">
+					<div class="inner">
+						<h1>工大助手</h1>
+						<p>工大学子学习生活好帮手</p>
+
+						<a class="btn" href="http://help.izjut.com" target="_blank">进入</a>
+					</div>
+				</li>
+			</ul>
+		<ol class="dots"><li class="dot">1</li><li class="dot">2</li><li class="dot active">3</li><li class="dot">4</li><li class="dot">5</li></ol></div>
+
+		<div class="features">
+			<ul class="wrap">
+				<li liclass="browser" >
+					<span class="button-wrap"><a href="http://blog.motea.org" target="_blank" class="button button-circle button-primary">博客Blog</a></span>
+					<p>基于Wordpress搭建，闲时写写，记录生活中种种囧事。</p>
+				</li>
+
+				<li class="keyboard">
+					<span class="button-wrap"><a href="http://Music.motea.org"  target="_blank" class="button button-circle button-primary">音乐Music</a></span>
+					<p>我的音乐小站，存放我喜欢的音乐。</p>
+				</li>
+
+				<li class="height">
+					<span class="button-wrap"><a href="http://www.izjut.com" target="_blank" class="button button-circle button-primary">工大问答</a></span>
+					<p>基于Wecenter搭建，目标建立一个有效的问答社区。</p>
+				</li>
+
+				<li class="responsive">
+					<span class="button-wrap"><a href="http://www.izjut.com" target="_blank" class="button button-circle button-primary">工大助手</a></span>
+					<p>微信公众平台，工大学子学习生活好帮手。</p>
+				</li>
+			</ul>
+		</div>
+<p style="background: #f7f7f6;"  align="center">Copyright©2013 青墨语</p>
+		<script src="style/jquery.min.js"></script>
+		<script src="style/jquery.event.move.js"></script>
+		<script src="style/jquery.event.swipe.js"></script>
+		<script src="style/unslider.min.js"></script>
+		<script>
+			if(window.chrome) {
+				$('.banner li').css('background-size', '100% 100%');
+			}
+
+			$('.banner').unslider({
+				arrows: false,
+				fluid: true,
+				dots: true
+			});
+
+			//  Find any element starting with a # in the URL
+			//  And listen to any click events it fires
+			$('a[href^="#"]').click(function() {
+				//  Find the target element
+				var target = $($(this).attr('href'));
+
+				//  And get its position
+				var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
+
+				//  jQuery will return false if there's no element
+				//  and your code will throw errors if it tries to do .offset().left;
+				if(pos) {
+					//  Scroll the page
+					$('html, body').animate({
+						scrollTop: pos.top,
+						scrollLeft: pos.left
+					}, 1000);
+				}
+
+				//  Don't let them visit the url, we'll scroll you there
+				return false;
+			});
+
+			
+		</script>
+		<div style="display:none">
+      <script src="http://s17.cnzz.com/stat.php?id=5040781&web_id=5040781&show=pic1" language="JavaScript"></script>
+     </div>
+</body></html>
